@@ -1,0 +1,19 @@
+How to Begin:
+Select the "Create an Account" option from the main menu.
+Enter the required information (username and password).
+Once your account is created, you can log in and start playing!
+
+Control Keys:
+W: Move Up
+A: Move Left
+S: Move Down
+D: Move Right
+Enter: Select a cell to open
+F: Flag a cell (mark it as a potential mine)
+Esc: Return to the main menu
+
+How to Play:
+
+-Selecting Cells:
+Use the WASD keys to move your cursor around the game board. Pressing these keys will move your position in the respective direction.
+Once the cursor is on the cell you want to open, press Enter to reveal the contents of that cell.
