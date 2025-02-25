@@ -86,7 +86,9 @@ void deleteData();
 void displayLeaderboardMenu();
 void sortPlayersByWinStatusAndPerformance(string gameModeChoice);
 void displayRankedLeaderboard(string gameModeChoice);
+void setCursorPosition(int x, int y);
 int countSurroundedMines(int x, int y);
+void flagtxt();
 
 // main //////////////////////////////////////////////////////////////////////////////////////
 
@@ -476,7 +478,7 @@ void setDifficulty() {
     setColor(7, 0);
     cout << "CUSTOM (your choice)\n\n\n";
     Sleep(1000);
-    sleepyPrint("Please select your option (1-4)  \n\n");
+    sleepyPrint("PLEASE SELECT YOUR OPTION (1-4)  \n\n");
 
     char choice;
     int inputNxN;
@@ -499,7 +501,7 @@ void setDifficulty() {
                     if (inputNxN > 8 && inputNxN <= 40 ) break;
                     else{
                         setColor(4, 0);
-                        cout << "Invalid input!\nPlease choose a number from 9 to 40\n\n";
+                        cout << "INVALID INPUT!\nPLEASE CHOOSE A NUMBER FROM 9 TO 40\n\n";
                         setColor(7, 0);
                         }
                     }
@@ -516,7 +518,7 @@ void setDifficulty() {
                     if (inputM > 9 && inputM < boardSize * boardSize ) {break;}
                     else{
                         setColor(4, 0);
-                        cout << "Invalid input!\nPlease choose a number from 10 to "
+                        cout << "INVALID INPUT!\nPLEASE CHOOSE A NUMBER FROM 10 TO "
                         << boardSize * boardSize - 1 << "\n\n";
                         setColor(7, 0);
                         }
@@ -931,7 +933,8 @@ void MainMenu()
 
     Sleep(500);
 
-    sleepyPrint("Please select your option (1-6)  ");
+    sleepyPrint("PLEASE SELECT YOUR OPTION (1-6)  ");
+    flagtxt();
 
 
     switch(char inputChar1 = getch()){
@@ -1316,3 +1319,33 @@ void deleteData (){
     ofstream targetFile("USERS DATA FOLDER/UDF.txt" , ios::trunc);
     targetFile.close();
 }
+
+
+void setCursorPosition(int x, int y) {
+    COORD coord;
+    coord.X = x;
+    coord.Y = y;
+    SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), coord);
+}
+
+void flagtxt() {
+    ifstream file("LOGOS/flag.txt");
+    string line;
+
+    int i = 0;
+
+    setColor(12, 0);
+
+    if (file.is_open()) {
+        while (getline(file, line))
+        {
+            setCursorPosition(65, i);
+            cout << line << endl;
+            Sleep(80);
+            i++;
+        }
+        file.close();
+    }
+    setColor(7, 0);
+}
+
