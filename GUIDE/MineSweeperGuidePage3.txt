@@ -1,0 +1,20 @@
+-Flagging Mines:
+If you suspect that a particular cell contains a mine, you can flag it by pressing F. This marks the cell with a flag.
+Flagging does not open the cell, but it helps you track which cells might contain mines, allowing you to avoid them in the future.
+
+-Find the Mines:
+The goal of the game is to open cells without selecting a mine. If you select a mine, the game ends, and you lose.
+Cells will show a number representing how many mines are adjacent to that cell. Use this information, along with flagged cells, to avoid mines and safely clear the board.
+
+-Starting the Game:
+After choosing your difficulty level, the game will automatically start. You can use WASD to move around the board, Enter to open cells, and F to flag cells.
+
+Selecting Difficulty Level:
+The game has four difficulty levels: Easy, Medium, Hard, and Custom. You can choose your desired difficulty from the main menu.
+Please note that if you choose a custom level, your name will not be listed on the leaderboard.
+
+Pay attention!!!
+**Please make sure your keyboard is set to English for proper input.
+
+**If you choose the Custom option, make sure that the size you choose matches the size of your monitor screen, otherwise the game screen image may not print properly,
+forcing you to return to the main menu and go through these steps again(Max : 40)
