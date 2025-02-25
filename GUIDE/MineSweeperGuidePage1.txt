@@ -1,0 +1,26 @@
+Welcome to Minesweeper! In this game, your goal is to avoid mines and open safe cells, while using the WASD keys to move around and the Enter key to open cells. Additionally, you can flag cells where you believe a mine might be hidden. Flagging helps you keep track of dangerous cells and avoid mistakenly opening them.
+
+First of all we recommend playing Minesweeper in full-screen mode to enjoy:
++ A clearer and more immersive view of the game board.
++ Better focus on the details of the game.
++ Enhanced readability of the menus and guides.
+You can maximize your terminal or console window to ensure you don't miss any part of the gameplay.
+
+Menu Option:
+1 - New Game: Start a fresh Minesweeper session.
+2 - Create an Account: for user profiles and progress tracking.
+3 - Guide: Displays gameplay instructions and controls.
+4 - Leader Board: Shows the top players and scores.
+5 - Clear Data: Deletes saved progress and resets game data.
+6 - Exit
+
+Before you can start enjoying the game, you need to create an account. Your account will allow you to:
+1 - Save your progress.
+2 - View your achievements and leaderboard rankings.
+3 - Personalize your experience.
+
+Important Note:
+Your account information is private and secure.
+Only the developer has access to your account details for technical purposes, such as troubleshooting or resetting data.
+Your credentials will not be shared with anyone else.
+After creating 100 users you have to clear data.
