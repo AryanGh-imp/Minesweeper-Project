@@ -1,3 +1,7 @@
+// Minesweeper Project
+// Copyright (c) 2025 Aryan Ghasemi
+// Licensed under the MIT License. See LICENSE file in the project root for details.
+
 #include <iostream>  
 #include <cstdlib>
 #include <time.h>
