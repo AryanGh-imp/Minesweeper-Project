@@ -196,8 +196,6 @@ Before running the game, ensure the following directory structure is set up to s
 
   
 
-**Sources**: maingame.cpp:728-735, 750-757, 774-781, 979-989, 1332-1340; .gitignore:1-7
-
   
 
 ## 3. Compilation Instructions
